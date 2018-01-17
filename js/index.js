@@ -5,8 +5,8 @@ $(document).ready(function(){
 var getIP = "http://ip-api.com/json/";
   
 $.getJSON(getIP, function(location){
-  var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + location.lat + "&lon=" + location.lon + "&appid=005a772d5a10c7adde4a43e07beaccd5";
-
+  // var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + location.lat + "&lon=" + location.lon + "&appid=005a772d5a10c7adde4a43e07beaccd5";
+  // Take offline til issues are fixed
 $.getJSON(url, function(data){
  var celsius = Math.floor(data.main.temp - 273.15) + "°C";
   var farenheit = Math.floor(data.main.temp - 273.15) * 1.8 + 32 + "°F";
